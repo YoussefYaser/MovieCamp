@@ -1,0 +1,27 @@
+.series-details .info .overview{ 
+    scrollbar-width: none;
+}
+
+.series-details .info .inner-shadow{
+    background: linear-gradient(to bottom, transparent 75%, #0F172A);
+    pointer-events: none;
+}
+
+.series-details .images-box > div{
+    scrollbar-width: none;
+}
+
+.series-details .images-box::before{
+    content: '';
+    width: 100%;
+    height: 100%;
+    background : linear-gradient(to bottom, #0F172A, transparent 10%, transparent 90%,#0F172A);
+    position: absolute;
+    top: 0;
+    left: 0;
+    pointer-events: none;
+    z-index: 2;
+}
+
+
+

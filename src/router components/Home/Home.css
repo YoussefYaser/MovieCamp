@@ -1,0 +1,124 @@
+.home .discover .inner img {
+    transition: 0.5s;
+}
+
+.home .discover .inner:hover img:nth-child(1) {
+    transform: perspective(200px) rotateX(30deg);
+    opacity: 25%;
+}
+
+.home .discover .inner:hover img:nth-child(2) {
+    opacity: 100% !important;
+}
+
+@media(max-width : 489px) {
+    .discover>div>div:nth-of-type(1) {
+        padding-right: 12px !important;
+    }
+
+    .discover>div>div:nth-of-type(2) {
+        padding-left: 12px !important;
+    }
+}
+
+@media (max-width: 339px) {
+    .discover>div {
+        flex-wrap: wrap !important;
+    }
+
+    .discover>div>div:nth-of-type(1) {
+        width: 100% !important;
+        padding-right: 0px !important;
+    }
+
+    .discover>div>div:nth-of-type(2) {
+        width: 100% !important;
+        padding-left: 0px !important;
+        margin-top: 24px;
+    }
+}
+
+
+.home-loading .lds-ellipsis,
+.home-loading .lds-ellipsis div {
+    box-sizing: border-box;
+}
+
+.home-loading .lds-ellipsis {
+    display: flex;
+    align-items: center;
+    position: relative;
+    width: 80px;
+    height: 50px;
+}
+
+.home-loading .lds-ellipsis div {
+    position: absolute;
+    /* top: 33.33333px; */
+    top: 50%;
+    width: 13.33333px;
+    height: 13.33333px;
+    border-radius: 50%;
+    background: currentColor;
+    animation-timing-function: cubic-bezier(0, 1, 1, 0);
+}
+
+.home-loading .lds-ellipsis div:nth-child(1) {
+    left: 8px;
+    animation: lds-ellipsis1 0.6s infinite;
+}
+
+.home-loading .lds-ellipsis div:nth-child(2) {
+    left: 8px;
+    animation: lds-ellipsis2 0.6s infinite;
+}
+
+.home-loading .lds-ellipsis div:nth-child(3) {
+    left: 32px;
+    animation: lds-ellipsis2 0.6s infinite;
+}
+
+.home-loading .lds-ellipsis div:nth-child(4) {
+    left: 56px;
+    animation: lds-ellipsis3 0.6s infinite;
+}
+
+@keyframes lds-ellipsis1 {
+    0% {
+        transform: scale(0);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+
+@keyframes lds-ellipsis3 {
+    0% {
+        transform: scale(1);
+    }
+
+    100% {
+        transform: scale(0);
+    }
+}
+
+@keyframes lds-ellipsis2 {
+    0% {
+        transform: translate(0, 0);
+    }
+
+    100% {
+        transform: translate(24px, 0);
+    }
+}
+
+@media(max-width : 400px){
+    .home-loading h2{
+        font-size: 1.875rem !important;
+    }
+
+    .home-loading h3{
+        font-size: 1rem !important;
+    }
+}

@@ -1,0 +1,9 @@
+.img-cover-slider .slider-overlay{
+    background: linear-gradient(to right , transparent 90%, var(--color-layout) 100%) ;
+    pointer-events: none;
+}
+
+.img-cover-slider{
+    box-shadow: 0 0 90px 100px var(--color-layout);
+    user-select: none;
+}

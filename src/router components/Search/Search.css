@@ -1,0 +1,40 @@
+@media(min-width: 460px){
+    .search .row > div{
+        width: 50% ;
+    }
+}
+
+@media(max-width: 460px){
+    .search .row > div{
+        width: 100% ;
+    }
+    .search .box{
+        flex-wrap: wrap !important;
+    }
+    .search .box input{
+        padding-top: 0.5rem;
+        padding-bottom: 0.5rem;
+    }
+    .search .box button{
+        width: 100%;
+    }
+}
+
+.search button:focus{
+    outline: none !important;
+}
+
+.search .row .inner{
+    animation-name: show;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes show{
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}

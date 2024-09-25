@@ -1,0 +1,12 @@
+.t-slider-one{
+    transform: perspective(200px) rotateY(10deg)!important;
+    margin-right: -50px !important;
+    z-index: -1;
+}
+
+.t-slider-three{
+    transform: perspective(200px) rotateY(-10deg)!important;
+    margin-left: -50px !important;
+    z-index: -1;
+}
+

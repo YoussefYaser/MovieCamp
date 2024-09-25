@@ -1,0 +1,10 @@
+.img-cover-slider-fade .movie-info {
+    max-height: calc(100% - 232px);
+}
+
+.img-cover-slider-fade .movie-info,
+.img-cover-slider-fade .movie-info::-webkit-scrollbar{
+    scrollbar-width: none;
+}
+
+

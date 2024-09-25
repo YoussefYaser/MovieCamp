@@ -1,0 +1,12 @@
+.top-rated-slider .swiper-next, 
+.top-rated-slider .swiper-prev{
+    width: 42px;
+}
+
+.top-rated-slider .swiper-next{
+    background:  linear-gradient(to right, transparent, #0F172A);
+}
+
+.top-rated-slider .swiper-prev{
+    background:  linear-gradient(to left, transparent, #0F172A);
+}

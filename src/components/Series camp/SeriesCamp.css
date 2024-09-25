@@ -1,0 +1,42 @@
+@media(min-width: 460px){
+    .TV .row > div{
+        width: 50%;
+    }
+}
+
+@media(max-width: 460px){
+    .TV .row > div{
+        width: 100% !important;
+    }
+}
+
+.TV .row  > div.innerUnhover{
+    animation-name: innerUnhover ;
+    animation-duration: 0.5s ;
+    animation-fill-mode: forwards;
+}
+
+.TV .row  > div.innerHover{
+    animation-name: innerHover ;
+    animation-duration: 0.5s;
+    animation-delay: 0.3s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes innerHover{
+    50%{
+        transform: scale(0.9) ;
+    }
+    100%{
+        transform: scale(1.1);
+    }
+}
+
+@keyframes innerUnhover{
+    0%{
+        transform: scale(1.1) ;
+    }
+    100%{
+        transform: scale(1);
+    }
+}
